@@ -1,0 +1,51 @@
+html{
+  scroll-behavior: smooth;
+
+}
+body{
+  background-color: #E1DDDB;
+  margin: 0;
+}
+.parent{
+  position: fixed;
+  margin: auto;
+  width: 100%;
+}
+nav h1{
+  color: white;
+  font-family: 'Fuggles', serif;
+  font-size: 61px;
+  margin-left: 25px;
+  line-height: 10px;
+}
+nav{
+  background-color: #39401F;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+a{
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+}
+nav a{
+  padding: 0 1.2vw 0 1.2vw;
+  font-family: 'Zen Loop', sans-serif;
+}
+@media screen and (max-width: 1024px){
+  nav h1{
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 878px){
+  .links{
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+}
