@@ -72,12 +72,27 @@ main{
 #Welcome p{
   font-size: 20px;
 }
+.facilities{
+  display:flex;
+  flex-direction:row;
+}/* TODO: center */
+.facility-item{
+  display:flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  margin-right:2em;
+  font-size: 25px;
+}
+#Description{
+  padding-top: 90px;
+}
 iframe{
   margin: 8% 0 8% 0;
 }
 .description-text{
   max-width: 70%;
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
 }
 @media screen and (max-width: 1024px){
   nav h1{
