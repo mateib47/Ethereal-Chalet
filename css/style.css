@@ -67,7 +67,6 @@ main{
 #Welcome h1{
   font-size: 60px;
   font-family: sans-serif;
-  text-align: center;
 }
 #Welcome p{
   font-size: 20px;
@@ -75,12 +74,13 @@ main{
 .facilities{
   display:flex;
   flex-direction:row;
-}/* TODO: center */
+  justify-content: center;
+}
 .facility-item{
   display:flex;
   flex-direction:row-reverse;
   align-items: center;
-  margin-right:2em;
+  padding:0 2em 0 2em;
   font-size: 25px;
 }
 #Description{
@@ -108,7 +108,9 @@ iframe{
   max-width: 25%;
   padding: 0 4px;
 }
-
+i{
+  margin-right: 10px;
+}
 .column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -128,6 +130,10 @@ iframe{
   main{
     padding-top: 40%;
   }
+  .facilities{
+    display:flex;
+    flex-direction:column;
+  }
   iframe{
     width: 300px;
     height: 200px;
@@ -139,6 +145,6 @@ iframe{
 }
 @media screen and (max-width: 546px){
   main{
-    padding-top: 60%;
+    padding-top: 45%;
   }
 }
