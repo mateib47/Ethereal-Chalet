@@ -198,6 +198,24 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
+.form-row{
+  display: flex;
+  flex-direction: row;
+}
+.form-box{
+  display: flex;
+  flex-direction: column;
+}
+.feedback-section{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.feedback-image{
+  max-width: 35%;
+  height: auto;
+  margin-right: 2vw;
+}
+/* TODO: style the form and make it responsive */
 @media screen and (max-width: 958px){
   :target:before {
       height: 220px;
