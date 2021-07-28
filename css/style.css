@@ -257,8 +257,20 @@ input{
   border-radius: 5px;
   border: 0;
 }
-/* TODO: style the form and make it responsive */
-@media screen and (max-width: 958px){
+footer{
+  background-color: #39401F;
+  height: 10vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer p{
+  margin-right: 15px;
+  font-size: 15px;
+}
+@media screen and (max-width: 960px){
   :target:before {
       height: 220px;
       margin: -220px 0 0;
@@ -277,6 +289,9 @@ input{
   display: flex;
   flex-direction: column;
   justify-content:  center;
+  }
+  .attraction-tile{
+    margin-bottom: 20px;
   }
   #title{
     line-height: 50px;
@@ -320,6 +335,16 @@ input{
   }
   .column {
     flex: 100%;
-    max-width: 100%;
+    max-width: 80%;
   }
+  .attraction-tile{
+    width: 80%;
+  }
+ .links{
+   margin-left:10px;
+ }
+ .text{
+   max-width: 89%;
+   margin: auto;
+ }
 }
